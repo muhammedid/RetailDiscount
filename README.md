@@ -3,6 +3,6 @@ Calculations of the invoice given in the abc project are made and a discount is 
 
 ## Testing Steps
 
-- Retail.bak file restore in Sql server or create sql database then run it RetailScript.sql
+- RetailDBFile/Retail.bak file restore in Sql server or create sql database then run it RetailDBFile/RetailScript.sql
 - Run project
 - Postman get method https://localhost/api/invoice/GetInvoiceCalculate?id=2 id is invoice id
