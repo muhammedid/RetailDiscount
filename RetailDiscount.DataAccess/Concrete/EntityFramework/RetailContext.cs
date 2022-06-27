@@ -18,11 +18,7 @@ namespace RetailDiscount.DataAccess.Concrete.EntityFramework
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=Retail;Trusted_Connection=true");
-        }
-        public RetailContext(DbContextOptions<RetailContext> options) : base(options)
-        {
-
-        }
+        }      
 
         public DbSet<Customer> Customers { get; set; }
 
